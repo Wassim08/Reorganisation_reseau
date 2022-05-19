@@ -1,0 +1,6 @@
+# nb= nombre de points total des chaines
+# C = colonne , M = taille table
+# C1 M=500,C2 M2=chaines->nbChaines , C3 M2=chaines->nbChaines*5, C4 M =comptePointsTotal(chaines)/2 , C5 M = comptePointsTotal(chaines)
+
+# nb		    C1	            C2	            C3	            C4	            C5
+50000		1.182000	1.030000	1.866000	85.164000	85.283000

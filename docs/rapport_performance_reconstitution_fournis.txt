@@ -1,0 +1,11 @@
+# nb= nombre de points total des chaines
+# L=temps_cpu de reconstitueReseauListe en seconde
+# H=temps_cpu de reconstitueReseauHachage en seconde
+# A=temps_cpu de reconstitueReseauArbre en seconde
+# La taille  de chaque table de Hachage vaut : chaines->nbChaines*5
+# Les temps sont obtenus apres 10 repetitions des fonctions de reconstitutions
+
+# nb		    L	            H	            A
+275090		116.950633	123.723583	0.776744
+130862		46.525664	61.903878	0.369240
+30		0.000090	0.000198	0.000120

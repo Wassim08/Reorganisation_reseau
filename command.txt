@@ -1,0 +1,23 @@
+./bin/ChaineMain ./docs/00014_burma.cha
+./bin/ChaineMain ./docs/00014_burma.cha ./docs/a.cha
+valgrind --leak-check=yes ./bin/ChaineMain ./docs/00014_burma.cha ./docs/a.cha
+valgrind --leak-check=yes ./bin/ChaineMain ./docs/00014_burma.cha
+./docs/test.cha
+valgrind --leak-check=yes  ./bin/ReconstitueReseau ./docs/00014_burma.cha
+./bin/ReconstitueReseau ./docs/00014_burma.cha 1
+
+./bin/ChaineMain ./docs/00014_burma.cha ./docs/a.cha ./docs/b.cha -- ./docs/a.cha
+
+./bin/PerformanceReconstitution ./docs/rapport_performance_reconstitution3.txt 10 ./docs/chaines_aleatoires
+
+./bin/generationAleatoireFileMain ./docs/chaines_aleatoires 20 20 5 5 10 10 12 29
+
+valgrind ./bin/ChaineMain ./docs/chaines_aleatoires/12chaines_0points.cha
+
+./bin/generationAleatoireFileMain2 ./docs/chaines_aleatoires 10 100 100 5 20 5 20
+
+./bin/generationAleatoireFileMain2 ./docs/chaines_aleatoires 20 0 100 300 300 300 400
+
+./bin/PerformanceReconstitution2 zoi.txt zoiAR.txt 10 5 5 10 11 1
+
+./bin/PerformanceTableHachage ./docs/rapport_performance_tableH.txt 100 10 10 500 100 10
